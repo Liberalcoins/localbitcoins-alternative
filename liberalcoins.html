@@ -367,9 +367,8 @@ $( document ).ready(function() {
 $( document ).ready(function() {
   var country_code = 'GB'
   var country="United Kingdom"
-  $.get("http://ip-api.com/json", function(response) {
-    country_code= response.countryCode;
-    country= response.country;
+  $.get("https://ipinfo.io", function(response) {
+    country_code= response.country;
     getLiberalcoinsList(country_code)
   }, "jsonp");
 
