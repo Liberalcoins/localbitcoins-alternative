@@ -367,8 +367,8 @@ $( document ).ready(function() {
 $( document ).ready(function() {
   var country_code = 'GB'
   var country="United Kingdom"
-  $.get("https://ipinfo.io", function(response) {
-    country_code= response.country;
+  $.get("https://extreme-ip-lookup.com/json/", function(response) {
+    country_code= response.countryCode;
     getLiberalcoinsList(country_code)
   }, "jsonp");
 
